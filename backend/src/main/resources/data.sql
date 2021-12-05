@@ -24,5 +24,24 @@ INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) 
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Forum','Tire suas dúvidas',1,'https://isi-mtl.com/wp-content/uploads/2020/01/c-project_management-1.jpg', 2,1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives','Lives Exclusivas para a turma ',1,'https://isi-mtl.com/wp-content/uploads/2020/01/c-project_management-1.jpg', 0,1);
 
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 1','Nesse capítulos vamos....',1,'https://isi-mtl.com/wp-content/uploads/2020/01/c-project_management-1.jpg',1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 2','Nesse capítulos vamos continuar....',2,'https://isi-mtl.com/wp-content/uploads/2020/01/c-project_management-1.jpg',1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 3','Nesse capítulos vamos finalizar....',3,'https://isi-mtl.com/wp-content/uploads/2020/01/c-project_management-1.jpg',1, 2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
