@@ -1,4 +1,4 @@
-package com.devsuperior.dslearnbds.enntities;
+package com.devsuperior.dslearnbds.entities;
 
 import java.io.Serializable;
 
@@ -9,25 +9,22 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tb_course")
-public class Course implements Serializable{
+@Table(name = "tb_role")
+public class Role implements Serializable{
+	
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String name;
-	private String imgUri;
-	private String imgGrayUri;
+	private String authority;
 	
-	public Course() {}
+	public Role() {}
 
-	public Course(Long id, String name, String imgUri, String imgGrayUri) {
+	public Role(Long id, String authority) {
 		super();
 		this.id = id;
-		this.name = name;
-		this.imgUri = imgUri;
-		this.imgGrayUri = imgGrayUri;
+		this.authority = authority;
 	}
 
 	public Long getId() {
@@ -38,28 +35,12 @@ public class Course implements Serializable{
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getAuthority() {
+		return authority;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getImgUri() {
-		return imgUri;
-	}
-
-	public void setImgUri(String imgUri) {
-		this.imgUri = imgUri;
-	}
-
-	public String getImgGrayUri() {
-		return imgGrayUri;
-	}
-
-	public void setImgGrayUri(String imgGrayUri) {
-		this.imgGrayUri = imgGrayUri;
+	public void setAuthority(String authority) {
+		this.authority = authority;
 	}
 
 	@Override
@@ -78,7 +59,7 @@ public class Course implements Serializable{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Course other = (Course) obj;
+		Role other = (Role) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;

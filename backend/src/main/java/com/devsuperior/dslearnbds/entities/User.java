@@ -1,4 +1,4 @@
-package com.devsuperior.dslearnbds.enntities;
+package com.devsuperior.dslearnbds.entities;
 
 import java.io.Serializable;
 import java.util.HashSet;
